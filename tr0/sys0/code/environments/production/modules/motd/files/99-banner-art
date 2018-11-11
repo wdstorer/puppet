@@ -1,0 +1,22 @@
+#!/bin/sh
+## Black        0;30     Dark Gray     1;30
+## Red          0;31     Light Red     1;31
+## Green        0;32     Light Green   1;32
+## Brown/Orange 0;33     Yellow        1;33
+## Blue         0;34     Light Blue    1;34
+## Purple       0;35     Light Purple  1;35
+## Cyan         0;36     Light Cyan    1;36
+## Light Gray   0;37     White         1;37
+
+color1='\033[0;33m'    # brown/orange
+color2='\033[1;30m'    # Dark Gray
+color3='\033[0;35m'    # light purple
+nocolor='\033[0m'      # no color
+
+printf "\n"
+printf "  ${color2}Welcome to${nocolor}\n"
+printf "  ${color1} _        __                ${color3}/\_/\\ ${nocolor}\n"
+printf "  ${color1}| |_ _ _ /  \          ${color3}____/ o o \\ ${nocolor}\n" 
+printf "  ${color1}|  _| '_| () |       ${color3}/~____  =ø= /${nocolor}\n"
+printf "  ${color1} \__|_|  \__/       ${color3}(______)__m_m)${nocolor}\n"
+printf "\n"
